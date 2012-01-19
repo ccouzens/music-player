@@ -10,6 +10,7 @@ WHERE {
   ?album a nmm:MusicAlbum; 
       nmm:albumTitle ?title ;
       nmm:albumArtist [ nmm:artistName ?artist_name ] .
+  ?song nmm:musicAlbum ?album .
 }  
 GROUP BY ?album
 """
