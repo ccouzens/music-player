@@ -6,6 +6,8 @@
     <columns>
       <!-- column-name title -->
       <column type="gchararray"/>
+      <!-- column-name album_art -->
+      <column type="GdkPixbuf"/>
     </columns>
   </object>
   <object class="GtkWindow" id="window1">
@@ -27,6 +29,12 @@
               <object class="GtkCellRendererText" id="cellrenderertext1"/>
               <attributes>
                 <attribute name="text">0</attribute>
+              </attributes>
+            </child>
+            <child>
+              <object class="GtkCellRendererPixbuf" id="cellrenderertext2"/>
+              <attributes>
+                <attribute name="pixbuf">1</attribute>
               </attributes>
             </child>
           </object>
